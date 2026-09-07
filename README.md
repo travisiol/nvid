@@ -188,7 +188,7 @@ to its SVG path data and every renderer switches to it.
 ## Project structure
 
 ```
-nvid/
+nvdia/
 ├── contracts/
 │   ├── contracts/
 │   │   ├── NVIDToken.sol
