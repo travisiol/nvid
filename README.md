@@ -211,6 +211,20 @@ nvdia/
 
 ---
 
+## Deploy
+
+The repository deploys **from its root** on Vercel with no project settings: `vercel.json` installs
+and builds `frontend/` and serves the static export in `frontend/out`. Import the repository,
+leave Root Directory empty, deploy.
+
+The frontend uses `output: "export"` because nothing in it needs a server — every route is
+prerendered and wallet / chain reads happen in the browser. If you later add API routes or server
+actions, remove that line from `frontend/next.config.ts`, delete `vercel.json`, and set the Vercel
+project’s **Root Directory** to `frontend`.
+
+Environment variables for production go in the Vercel project (Settings → Environment Variables);
+the list is in `frontend/.env.example`.
+
 ## Before mainnet
 
 - **NVDA Stock Token address** on Robinhood Chain must be confirmed from the issuer; a wrong address routes
