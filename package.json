@@ -1,0 +1,17 @@
+{
+  "name": "nvid",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NVID — Robinhood Chain RWA memecoin. Buy the token. Earn NVIDIA.",
+  "scripts": {
+    "install:all": "npm --prefix contracts install && npm --prefix frontend install",
+    "test": "npm --prefix contracts test",
+    "compile": "npm --prefix contracts run compile",
+    "deploy:local": "npm --prefix contracts run deploy:local",
+    "deploy:robinhood": "npm --prefix contracts run deploy:robinhood",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "typecheck": "npm --prefix frontend run typecheck"
+  }
+}
